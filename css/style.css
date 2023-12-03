@@ -1,0 +1,301 @@
+html,
+body {
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+
+}
+
+ul li:last-child {
+	margin-bottom: 0;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+button,
+label {
+	cursor: pointer;
+}
+
+input,
+button,
+textarea {
+	background: none;
+	border: none;
+	outline: none;
+	display: block;
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	display: none;
+}
+
+input::placeholder {
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+input,
+textarea {
+	display: block;
+	resize: none;
+}
+
+body {
+	font-size: 14px;
+	line-height: 19px;
+	color: #242424;
+	width: 100%;
+	font-family: 'Manrope', arial, sans-serif;
+}
+
+.container {
+	max-width: 1325px;
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.dn {
+	display: none;
+}
+
+
+.sec_tit {
+	font-weight: 800;
+	font-size: 42px;
+	line-height: 57px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.color {
+	color: #BE963F;
+}
+
+.dib {
+	display: inline-block;
+}
+
+.hover {
+	transition: 0.3s;
+}
+
+.hover:hover {
+	color: #BE963F;
+}
+
+
+.link {
+	transition: 0.3s;
+}
+
+.link:hover {
+	box-shadow: 0px 6px 5px 2px #836A36;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+/* header */
+.head {
+	padding: 20px 0;
+	align-items: center;
+}
+
+.menu a {
+	padding: 4px 16px;
+	margin-right: 8px;
+	color: #2c2f24;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	/* 150% */
+	border-radius: 34px;
+	transition: 0.3s;
+}
+
+.menu li:last-child a {
+	margin-right: 0;
+}
+
+.menu a:hover {
+	background: #dbdfd0;
+}
+
+
+.btn_book {
+	display: flex;
+	width: 160px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 6px;
+	background: #43806C;
+	margin-left: 53px;
+}
+
+.book {
+	color: var(--White, #FFF);
+
+	/* text-14 medium */
+	font-family: "Glock Grotesque TRIAL";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.to-top {
+	color: #242424;
+	padding-top: 1.8em;
+	display: inline-block;
+	/* or block */
+	position: relative;
+	border-color: white;
+	text-decoration: none;
+	transition: all .3s ease-out;
+}
+
+.to-top:before {
+	content: '▲';
+	font-size: .9em;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -.7em;
+	border: solid .13em black;
+	border-radius: 10em;
+	width: 1.4em;
+	height: 1.4em;
+	line-height: 1.3em;
+	border-color: inherit;
+	transition: transform .5s ease-in;
+}
+
+.to-top:hover {
+	color: #2c2f24;
+	border-color: #2c2f24;
+}
+
+.to-top:hover:before {
+	transform: rotate(360deg);
+}
+
+.starter {
+	background: url(/img/icons/backround.jpg), lightgray 50% / cover no-repeat;
+	width: 1440px;
+	height: 720px;
+	flex-shrink: 0;
+}
+
+.starter_tit {
+	color: #214E41;
+	font-family: Roboto;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 46px;
+	/* 127.778% */
+	width: 800px;
+	padding: 161px;
+}
+
+.starter_txt {
+	color: #214E41;
+	font-family: Raleway;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	/* 150% */
+	margin-top: 40px;
+}
+
+form {
+	border-radius: 6px 6px 6px 6px;
+	background: #FFF;
+	width: 172px;
+	justify-content: start;
+}
+
+.butonn {
+	border-radius: 0px 6px 6px 0px;
+	background: #43806C;
+}
+* {box-sizing: border-box;}
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+input, button {
+  outline: none;
+  background: transparent;
+}
+input {
+	width: 280px;
+	height: 60px;
+	flex-shrink: 0;
+  padding-left: 15px;
+  border: 3px solid #F9F0DA;
+  border-radius: 6px;
+  
+}
+button {
+  border: none;
+  width: 123px;
+height: 60px;
+flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  border-radius: 0px 6px 6px 0px;
+background: #43806C;
+}
+button:before {
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+input:focus {
+  border-color: #311c24;
+}
