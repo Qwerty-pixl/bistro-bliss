@@ -139,6 +139,10 @@ body {
 	align-items: center;
 }
 
+.head_logo {
+	margin-left: 43px;
+}
+
 .menu a {
 	padding: 4px 16px;
 	margin-right: 8px;
@@ -234,8 +238,9 @@ body {
 	font-weight: 700;
 	line-height: 46px;
 	/* 127.778% */
-	width: 800px;
-	padding: 161px;
+	width: 516px;
+	padding-top: 161px;
+	margin-left: 120px;
 }
 
 .starter_txt {
@@ -246,7 +251,7 @@ body {
 	font-weight: 700;
 	line-height: 24px;
 	/* 150% */
-	margin-top: 40px;
+	margin: 40px 0 15px 120px;
 }
 
 form {
@@ -254,48 +259,63 @@ form {
 	background: #FFF;
 	width: 172px;
 	justify-content: start;
+	position: relative;
+	width: 300px;
+	margin-left: 120px;
+
 }
 
 .butonn {
 	border-radius: 0px 6px 6px 0px;
 	background: #43806C;
 }
-* {box-sizing: border-box;}
-form {
-  position: relative;
-  width: 300px;
-  margin: 0 auto;
+
+* {
+	box-sizing: border-box;
 }
-input, button {
-  outline: none;
-  background: transparent;
+
+input,
+button {
+	outline: none;
+	background: transparent;
 }
+
 input {
 	width: 280px;
 	height: 60px;
 	flex-shrink: 0;
-  padding-left: 15px;
-  border: 3px solid #F9F0DA;
-  border-radius: 6px;
-  
+	padding-left: 15px;
+	border: 3px solid #F9F0DA;
+	border-radius: 6px;
+	color: #222;
+	font-family: "Raleway";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 20px;
+	/* 142.857% */
+
 }
+
 button {
-  border: none;
-  width: 123px;
-height: 60px;
-flex-shrink: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  border-radius: 0px 6px 6px 0px;
-background: #43806C;
+	border: none;
+	width: 123px;
+	height: 60px;
+	flex-shrink: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	border-radius: 0px 6px 6px 0px;
+	background: #43806C;
 }
+
 button:before {
-  font-family: FontAwesome;
-  font-size: 16px;
-  color: #F9F0DA;
+	font-family: FontAwesome;
+	font-size: 16px;
+	color: #F9F0DA;
 }
+
 input:focus {
-  border-color: #311c24;
+	border-color: #311c24;
 }
