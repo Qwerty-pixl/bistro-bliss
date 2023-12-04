@@ -321,16 +321,16 @@ input:focus {
 }
 
 .cards {
-	
+
 	height: 171px;
 	flex-shrink: 0;
 	display: flex;
 	border-radius: 6px;
-	background:#FFF;
+	background: #FFF;
 	box-shadow: 1px 1px 4px 0px rgba(141, 135, 135, 0.6);
 	margin-left: 120px;
 	margin-top: -70px;
-	
+
 }
 
 .card_img {
@@ -344,9 +344,10 @@ input:focus {
 	display: flex;
 	margin-top: 50px;
 	width: calc((100% - 55px) / 3);
-	
+
 }
-.card:first-child{
+
+.card:first-child {
 	margin-left: 50px;
 }
 
@@ -359,4 +360,26 @@ input:focus {
 	line-height: 20px;
 	/* 142.857% */
 	width: 276px;
+}
+
+brella_left-txt {
+	color: #43806C;
+	font-family: Raleway;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	/* 153.846% */
+	letter-spacing: 0.05px;
+	text-transform: uppercase;
+}
+
+.conect_tit {
+	color: #214E41;
+	font-family: Roboto;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 42px;
+	/* 131.25% */
 }
