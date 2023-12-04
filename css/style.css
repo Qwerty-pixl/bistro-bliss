@@ -321,13 +321,15 @@ input:focus {
 }
 
 .cards {
-	width: 1200px;
+	
 	height: 171px;
 	flex-shrink: 0;
 	display: flex;
 	border-radius: 6px;
-	background: #FFF;
-	box-shadow: 1px 1px 4px 0px rgba(232, 230, 230, 0.60);
+	background:#FFF;
+	box-shadow: 1px 1px 4px 0px rgba(141, 135, 135, 0.6);
+	margin-left: 120px;
+	margin-top: -70px;
 	
 }
 
@@ -340,7 +342,12 @@ input:focus {
 
 .card {
 	display: flex;
-	margin: 50px;
+	margin-top: 50px;
+	width: calc((100% - 55px) / 3);
+	
+}
+.card:first-child{
+	margin-left: 50px;
 }
 
 .card_txt {
