@@ -319,19 +319,30 @@ button:before {
 input:focus {
 	border-color: #311c24;
 }
-.cards{
+
+.cards {
+	width: 1200px;
+	height: 171px;
+	flex-shrink: 0;
 	display: flex;
+	border-radius: 6px;
+	background: #FFF;
+	box-shadow: 1px 1px 4px 0px rgba(232, 230, 230, 0.60);
+	
 }
+
 .card_img {
 	width: 41px;
 	height: 45px;
 	flex-shrink: 0;
 	margin-right: 10px;
 }
-.card{
+
+.card {
 	display: flex;
 	margin: 50px;
 }
+
 .card_txt {
 	color: #214E41;
 	font-family: Raleway;
