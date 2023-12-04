@@ -319,13 +319,19 @@ button:before {
 input:focus {
 	border-color: #311c24;
 }
-
+.cards{
+	display: flex;
+}
 .card_img {
 	width: 41px;
 	height: 45px;
 	flex-shrink: 0;
+	margin-right: 10px;
 }
-
+.card{
+	display: flex;
+	margin: 50px;
+}
 .card_txt {
 	color: #214E41;
 	font-family: Raleway;
@@ -334,4 +340,5 @@ input:focus {
 	font-weight: 400;
 	line-height: 20px;
 	/* 142.857% */
+	width: 276px;
 }
