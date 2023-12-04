@@ -319,3 +319,9 @@ button:before {
 input:focus {
 	border-color: #311c24;
 }
+
+.card_img {
+	width: 41px;
+	height: 45px;
+	flex-shrink: 0;
+}
