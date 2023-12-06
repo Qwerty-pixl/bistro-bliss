@@ -22,6 +22,12 @@ a {
 
 li {
 	list-style: none;
+	color: #214E41;
+font-family: Raleway;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 142.857% */
 
 }
 
@@ -619,6 +625,10 @@ nav{
 	line-height: 46px;
 	/* 127.778% */
 	margin-bottom: 34px;
+	width: 556px;
+}
+.brella{
+	
 }
 
 .credit_txt {
@@ -630,12 +640,14 @@ nav{
 	line-height: 30px;
 	/* 166.667% */
 	letter-spacing: 0.02px;
+	width: 551px;
 }
 
 .right_img {
 	width: 560px;
 	height: 298px;
 	flex-shrink: 0;
+	margin: 120px 120px 0  0;
 }
 
 .credit_top {
