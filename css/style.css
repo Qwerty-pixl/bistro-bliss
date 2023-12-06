@@ -23,11 +23,12 @@ a {
 li {
 	list-style: none;
 	color: #214E41;
-font-family: Raleway;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 20px; /* 142.857% */
+	font-family: Raleway;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 20px;
+	/* 142.857% */
 
 }
 
@@ -356,13 +357,15 @@ input:focus {
 .card:first-child {
 	margin-left: 50px;
 }
-.header{
+
+.header {
 	position: fixed;
 	left: 0;
 	top: 0;
 	right: 0;
 	background: #FFF;
 }
+
 .card_txt {
 	color: #214E41;
 	font-family: Raleway;
@@ -374,9 +377,10 @@ input:focus {
 	width: 276px;
 }
 
-nav{
+nav {
 	margin-left: 280px;
 }
+
 .brella_right {
 	margin-top: 213px;
 	margin-left: 180px;
@@ -565,7 +569,7 @@ nav{
 .dva_left {
 	background: #E3EEED;
 	width: 50%;
-    padding: 120px 0 120px 120px;
+	padding: 120px 0 120px 120px;
 }
 
 .dva {
@@ -599,7 +603,8 @@ nav{
 	/* 170% */
 	letter-spacing: 0.02px;
 }
-.dva_right-txt:first-child{
+
+.dva_right-txt:first-child {
 	margin-bottom: 20px;
 }
 
@@ -627,9 +632,8 @@ nav{
 	margin-bottom: 34px;
 	width: 556px;
 }
-.brella{
-	
-}
+
+.brella {}
 
 .credit_txt {
 	color: #757575;
@@ -647,9 +651,35 @@ nav{
 	width: 560px;
 	height: 298px;
 	flex-shrink: 0;
-	margin: 120px 120px 0  0;
+	margin: 120px 120px 0 0;
 }
 
 .credit_top {
 	display: flex;
+	margin-bottom: 60px;
+}
+
+.card_tit {
+	color: #F0A446;
+	font-family: "Roboto";
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 78px;
+	/* 130% */
+}
+
+.card_txt {
+	color: #214E41;
+	font-family: Raleway;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 22px;
+	/* 169.231% */
+	letter-spacing: 0.02px;
+	width: 239px;
+}
+.bottom_cards{
+	margin-left: 120px;
 }
