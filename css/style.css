@@ -378,7 +378,7 @@ input:focus {
 	/* 153.846% */
 	letter-spacing: 0.05px;
 	text-transform: uppercase;
-	margin-bottom: 20px;
+
 }
 
 .conect {
@@ -418,7 +418,6 @@ input:focus {
 .brellas {
 	display: flex;
 	justify-content: center;
-	background: #000;
 	width: 1440px;
 	align-items: center;
 
@@ -511,6 +510,7 @@ input:focus {
 	line-height: 22px;
 	/* 169.231% */
 	display: flex;
+
 }
 
 .reitingin {
@@ -533,7 +533,18 @@ input:focus {
 
 .dva_right {
 	background: #214E41;
-    width: 50%;
+	width: 50%;
+}
+
+.dva_right-text {
+	color: #FFF;
+	font-family: Raleway;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 34px;
+	/* 170% */
+	letter-spacing: 0.02px;
 }
 
 .dva_left {
@@ -545,4 +556,64 @@ input:focus {
 .dva {
 	display: flex;
 	justify-content: center;
+}
+
+.dvas {
+	display: flex;
+	width: 1440px;
+	height: 640px;
+	flex-shrink: 0;
+}
+
+.credit_top-left {
+	width: 600px;
+	height: 298.344px;
+	flex-shrink: 0;
+	margin-top: 120px;
+	margin-left: 120px;
+	margin-right: 40px;
+}
+
+.credit_titi {
+	color: #43806C;
+	font-family: Raleway;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 20px;
+	/* 153.846% */
+	letter-spacing: 0.05px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.credit_tit {
+	color: #214E41;
+	font-family: Roboto;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 46px;
+	/* 127.778% */
+	margin-bottom: 34px;
+}
+
+.credit_txt {
+	color: #757575;
+	font-family: Raleway;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+	/* 166.667% */
+	letter-spacing: 0.02px;
+}
+
+.right_img {
+	width: 560px;
+	height: 298px;
+	flex-shrink: 0;
+}
+.credit_top{
+	display: flex;
 }
