@@ -350,7 +350,13 @@ input:focus {
 .card:first-child {
 	margin-left: 50px;
 }
-
+.header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	background: #FFF;
+}
 .card_txt {
 	color: #214E41;
 	font-family: Raleway;
@@ -362,7 +368,9 @@ input:focus {
 	width: 276px;
 }
 
-
+nav{
+	margin-left: 280px;
+}
 .brella_right {
 	margin-top: 213px;
 	margin-left: 180px;
@@ -534,6 +542,7 @@ input:focus {
 .dva_right {
 	background: #214E41;
 	width: 50%;
+	padding: 120px;
 }
 
 .dva_right-text {
@@ -550,7 +559,7 @@ input:focus {
 .dva_left {
 	background: #E3EEED;
 	width: 50%;
-
+    padding: 120px 0 120px 120px;
 }
 
 .dva {
@@ -572,6 +581,20 @@ input:focus {
 	margin-top: 120px;
 	margin-left: 120px;
 	margin-right: 40px;
+}
+
+.dva_right-txt {
+	color: #FFF;
+	font-family: Raleway;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 34px;
+	/* 170% */
+	letter-spacing: 0.02px;
+}
+.dva_right-txt:first-child{
+	margin-bottom: 20px;
 }
 
 .credit_titi {
@@ -614,6 +637,7 @@ input:focus {
 	height: 298px;
 	flex-shrink: 0;
 }
-.credit_top{
+
+.credit_top {
 	display: flex;
 }
