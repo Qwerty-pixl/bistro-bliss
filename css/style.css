@@ -685,8 +685,18 @@ nav {
 	margin-left: 120px;
 }
 
+.phones {
+	display: flex;
+}
+
 .phone_left-img {
 	width: 296px;
 	height: 500px;
 	margin: 117px 164px 0 235px;
+}
+
+.crads {
+	width: 1200px;
+	height: 171px;
+	flex-shrink: 0;
 }
