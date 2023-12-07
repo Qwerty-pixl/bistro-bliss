@@ -700,3 +700,6 @@ nav {
 	height: 171px;
 	flex-shrink: 0;
 }
+.big_image{
+	background: url();
+}
