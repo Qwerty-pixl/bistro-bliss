@@ -680,6 +680,13 @@ nav {
 	letter-spacing: 0.02px;
 	width: 239px;
 }
-.bottom_cards{
+
+.bottom_cards {
 	margin-left: 120px;
+}
+
+.phone_left-img {
+	width: 296px;
+	height: 500px;
+	margin: 117px 164px 0 235px;
 }
