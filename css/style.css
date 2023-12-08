@@ -707,16 +707,22 @@ nav {
 	height: 522px;
 	flex-shrink: 0;
 }
-.image_text{
+
+.image_text {
 	margin: 0 820px 114px 120px;
 	padding: 125px;
 }
+
 .scrolling-wrapper {
 	overflow-x: scroll;
 	overflow-y: hidden;
 	white-space: nowrap;
-  
-	.card {
-	  display: inline-block;
+
+	.cart {
+		display: inline-block;
+		width: 146px;
+		height: 60px;
+		flex-shrink: 0;
+		margin-left: 80px;
 	}
-  }
+}
