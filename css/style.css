@@ -711,3 +711,12 @@ nav {
 	margin: 0 820px 114px 120px;
 	padding: 125px;
 }
+.scrolling-wrapper {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+  
+	.card {
+	  display: inline-block;
+	}
+  }
