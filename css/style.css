@@ -153,11 +153,13 @@ body {
 .menu a {
 	padding: 4px 16px;
 	margin-right: 8px;
-	color: #2c2f24;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 24px;
-	/* 150% */
+	color: #214E41;
+	font-family: Raleway;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 20px;
+	/* 142.857% */
 	border-radius: 34px;
 	transition: 0.3s;
 }
@@ -264,10 +266,9 @@ body {
 form {
 	border-radius: 6px 6px 6px 6px;
 	background: #FFF;
-	width: 172px;
 	justify-content: start;
 	position: relative;
-	width: 300px;
+	width: 403px;
 	margin-left: 120px;
 
 }
@@ -288,7 +289,7 @@ button {
 }
 
 input {
-	width: 280px;
+	width: 403px;
 	height: 60px;
 	flex-shrink: 0;
 	padding-left: 15px;
@@ -396,6 +397,7 @@ nav {
 	/* 153.846% */
 	letter-spacing: 0.05px;
 	text-transform: uppercase;
+	margin-bottom: 20px;
 
 }
 
