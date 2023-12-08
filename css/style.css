@@ -700,6 +700,14 @@ nav {
 	height: 171px;
 	flex-shrink: 0;
 }
-.big_image{
-	background: url(/img/icons/);
+
+.big_image {
+	background-image: url(/img/icons/girl.jpg);
+	width: 1440px;
+	height: 522px;
+	flex-shrink: 0;
+}
+.image_text{
+	margin: 0 820px 114px 120px;
+	padding: 125px;
 }
