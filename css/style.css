@@ -1,7 +1,4 @@
 html,
-body {
-	height: 100%;
-}
 
 * {
 	margin: 0;
@@ -77,14 +74,6 @@ input,
 textarea {
 	display: block;
 	resize: none;
-}
-
-body {
-	font-size: 14px;
-	line-height: 19px;
-	color: #242424;
-	width: 100%;
-	font-family: 'Manrope', arial, sans-serif;
 }
 
 .container {
@@ -437,9 +426,10 @@ nav {
 
 .brellas {
 	display: flex;
+	padding: 0px 60px;
 	justify-content: center;
-	width: 1440px;
 	align-items: center;
+	gap: 60px;
 
 }
 
@@ -634,8 +624,6 @@ nav {
 	margin-bottom: 34px;
 	width: 556px;
 }
-
-.brella {}
 
 .credit_txt {
 	color: #757575;
