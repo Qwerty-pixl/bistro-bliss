@@ -425,6 +425,8 @@ nav {
 }
 
 .brellas {
+	width: 1440px;
+	height: 630px;
 	display: flex;
 	padding: 0px 60px;
 	justify-content: center;
@@ -594,6 +596,7 @@ nav {
 	line-height: 34px;
 	/* 170% */
 	letter-spacing: 0.02px;
+	width: 491px;
 }
 
 .dva_right-txt:first-child {
@@ -726,4 +729,125 @@ nav {
 	font-weight: 700;
 	line-height: 46px;
 	/* 127.778% */
+	margin-top: 120px;
+	margin-bottom: 110px;
 }
+
+.prouder {
+	display: flex;
+	width: 1400px;
+	height: 226px;
+	padding: 0px 100px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 110.344px;
+	flex-shrink: 0;
+}
+
+.slips {
+	height: 367.516px;
+	padding-left: 55.656px;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: 40px;
+	flex-shrink: 0;
+}
+
+span {
+	color: #43806C;
+	font-family: Raleway;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px;
+	/* 163.636% */
+	letter-spacing: 0.05px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.slip {
+	margin-top: 240px;
+}
+
+.slip_img {
+	width: 355px;
+	height: 237px;
+	flex-shrink: 0;
+	margin-bottom: 20px;
+}
+
+.slip_txt {
+	color: #214E41;
+	font-family: Roboto;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px;
+	/* 130% */
+	width: 342px;
+}
+
+.talk_left {
+	margin-top: 400px;
+}
+
+.talk_right {
+	margin-top: 400px;
+	background: #E3EEED;
+	padding-left: 120px;
+	padding-right: 177px;
+}
+
+.talk_left-img {
+	width: 720px;
+	height: 577px;
+	flex-shrink: 0;
+	
+
+}
+
+.talker {
+	display: flex;
+}
+
+.talk_txt {
+	color: #214E41;
+	font-family: Roboto;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 46px;
+	/* 127.778% */
+	width: 423px;
+	margin-bottom: 46px;
+}
+
+.talk_text {
+	margin-top: 144px;
+}
+
+.btn_talk {
+	display: block;
+	border-radius: 6px;
+	border: 1px solid #43806C;
+	background: #43806C;
+	width: 125px;
+	height: 47px;
+	flex-shrink: 0;
+}
+
+.push {
+	padding: 13px 24px;
+	color: #FFF;
+	text-align: center;
+	font-family: Raleway;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 21px;
+	/* 161.538% */
+	letter-spacing: 0.02px;
+}
+.talk_
