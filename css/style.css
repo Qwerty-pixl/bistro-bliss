@@ -313,6 +313,17 @@ button:before {
 	color: #F9F0DA;
 }
 
+.card_txt {
+	margin-bottom: 7px;
+	color: #214E41;
+	font-family: "Raleway";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	/* 150% */
+}
+
 input:focus {
 	border-color: #311c24;
 }
@@ -326,7 +337,7 @@ input:focus {
 	background: #FFF;
 	box-shadow: 1px 1px 4px 0px rgba(141, 135, 135, 0.6);
 	margin-left: 120px;
-	margin-top: -70px;
+	margin-top: -95px;
 
 }
 
@@ -427,7 +438,7 @@ nav {
 
 .brellas {
 	width: 1440px;
-	height: 630px;
+	height: 652px;
 	display: flex;
 	padding: 0px 60px;
 	justify-content: center;
@@ -856,7 +867,7 @@ span {
 
 footer {
 	background: #214E41;
-	
+
 }
 
 .footer_first {
@@ -866,7 +877,8 @@ footer {
 	margin: 0 253px 94px 100px;
 	padding-top: 100px;
 }
-.footer_second{
+
+.footer_second {
 	padding-top: 100px;
 	gap: 15px;
 }
@@ -882,18 +894,17 @@ footer {
 	letter-spacing: 0.02px;
 	text-transform: uppercase;
 }
-.footer_top-left{
+
+.footer_top-left {
 	display: flex;
 }
 
 .footer_little {
 	color: #FFF;
-	font-family: "Raleway";
-	font-size: 13px;
+	font-family: Raleway;
+	font-size: 16px;
 	font-style: normal;
-	font-weight: 700;
-	line-height: 24px;
-	/* 184.615% */
-	letter-spacing: 0.02px;
-	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 27px;
+	/* 168.75% */
 }
