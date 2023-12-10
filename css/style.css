@@ -369,6 +369,7 @@ input:focus {
 
 nav {
 	margin-left: 280px;
+	
 }
 
 .brella_right {
@@ -676,6 +677,7 @@ nav {
 
 .bottom_cards {
 	margin-left: 120px;
+	width: 1200px;
 }
 
 .phones {
@@ -752,6 +754,7 @@ nav {
 	align-items: flex-start;
 	gap: 40px;
 	flex-shrink: 0;
+	width: 1300px;
 }
 
 span {
