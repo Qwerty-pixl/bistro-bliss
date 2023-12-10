@@ -318,7 +318,7 @@ input:focus {
 }
 
 .cards {
-
+    width: 1200px;
 	height: 171px;
 	flex-shrink: 0;
 	display: flex;
