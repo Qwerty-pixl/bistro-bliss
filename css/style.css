@@ -318,7 +318,7 @@ input:focus {
 }
 
 .cards {
-    width: 1200px;
+	width: 1200px;
 	height: 171px;
 	flex-shrink: 0;
 	display: flex;
@@ -369,7 +369,7 @@ input:focus {
 
 nav {
 	margin-left: 280px;
-	
+
 }
 
 .brella_right {
@@ -807,7 +807,7 @@ span {
 	width: 720px;
 	height: 577px;
 	flex-shrink: 0;
-	
+
 
 }
 
@@ -852,4 +852,38 @@ span {
 	line-height: 21px;
 	/* 161.538% */
 	letter-spacing: 0.02px;
+}
+
+footer {
+	background: #214E41;
+}
+
+.footer_first {
+	width: 98px;
+	height: 28px;
+	flex-shrink: 0;
+}
+
+.footer_txt {
+	color: #FFF;
+	font-family: Raleway;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	/* 184.615% */
+	letter-spacing: 0.02px;
+	text-transform: uppercase;
+}
+
+.footer_little {
+	color: #FFF;
+	font-family: Raleway;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	/* 184.615% */
+	letter-spacing: 0.02px;
+	text-transform: uppercase;
 }
