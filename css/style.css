@@ -986,7 +986,49 @@ hr {
 	letter-spacing: 0.02px;
 	margin-bottom: 22px;
 }
-.footer_tup{
+
+.footer_tup {
 	margin-top: 90px;
 	display: flex;
+}
+
+.col1 {
+	color: #FFF;
+	font-family: Raleway;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	/* 171.429% */
+	letter-spacing: 0.02px;
+	float: left;
+	box-shadow: inset -1px 0 0 white;
+	padding-right: 10px;
+}
+
+.col2 {
+	color: #FFF;
+	font-family: Raleway;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	/* 171.429% */
+	letter-spacing: 0.02px;
+	width: 1px;
+	height: 24px;
+	flex-shrink: 0;
+	float: left;
+}
+
+.col3 {
+	color: #FFF;
+	font-family: Raleway;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	/* 171.429% */
+	letter-spacing: 0.02px;
+	margin-left: 10px;
 }
