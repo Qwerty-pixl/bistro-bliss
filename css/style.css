@@ -401,7 +401,7 @@ nav {
 	margin-left: 180px;
 }
 .brella_left{
-	margin-left: 120px;
+	margin-left: 10px;
 }
 .brella_left-txt {
 	color: #43806C;
@@ -426,11 +426,13 @@ nav {
 
 .conect_tit {
 	color: #214E41;
-font-family: Roboto;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: 46px; /* 127.778% */
+	font-family: Roboto;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 42px;
+	/* 131.25% */
+	margin-bottom: 34px;
 }
 
 .conect_img {
