@@ -596,8 +596,6 @@ nav {
 	height: 298.344px;
 	flex-shrink: 0;
 	margin-top: 120px;
-	margin-left: 120px;
-	margin-right: 40px;
 }
 
 .dva_right-txt {
@@ -658,12 +656,13 @@ nav {
 	width: 560px;
 	height: 298px;
 	flex-shrink: 0;
-	margin: 120px 120px 0 0;
+	margin: 120px 120px 0 40px;
 }
 
 .credit_top {
 	display: flex;
 	margin-bottom: 60px;
+	padding: 0 120px;
 }
 
 .card_tit {
@@ -674,11 +673,12 @@ nav {
 	font-weight: 700;
 	line-height: 78px;
 	/* 130% */
+	margin-bottom: 13px;
 }
 
 .card_txt {
 	color: #214E41;
-	font-family: Raleway;
+	font-family: "Raleway";
 	font-size: 13px;
 	font-style: normal;
 	font-weight: 700;
@@ -695,12 +695,19 @@ nav {
 
 .phones {
 	display: flex;
+	margin-top: 120px;
 }
-
+.phone_right{
+	padding-left: 120px;
+}
+.phone_left{
+	padding-left: 230px;
+	margin-right: 103px;
+}
 .phone_left-img {
 	width: 296px;
 	height: 500px;
-	margin: 117px 164px 0 235px;
+	
 }
 
 .crads {
