@@ -342,7 +342,7 @@ input:focus {
 }
 
 .card_img {
-	width: 41px;
+	width: 46px;
 	height: 45px;
 	flex-shrink: 0;
 	margin-right: 10px;
@@ -697,17 +697,20 @@ nav {
 	display: flex;
 	margin-top: 120px;
 }
-.phone_right{
+
+.phone_right {
 	padding-left: 120px;
 }
-.phone_left{
+
+.phone_left {
 	padding-left: 230px;
 	margin-right: 103px;
 }
+
 .phone_left-img {
 	width: 296px;
 	height: 500px;
-	
+
 }
 
 .crads {
