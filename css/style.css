@@ -400,7 +400,9 @@ nav {
 	margin-top: 213px;
 	margin-left: 180px;
 }
-
+.brella_left{
+	margin-left: 120px;
+}
 .brella_left-txt {
 	color: #43806C;
 	font-family: Raleway;
