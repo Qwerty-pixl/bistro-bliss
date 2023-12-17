@@ -12,183 +12,48 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
-
+	
 
 </head>
 
 <body>
-	<div data-collapse="medium" data-animation="default" data-duration="600" data-easing="ease-in"
-		data-easing2="ease-out" data-no-scroll="1" role="banner" class="nav w-nav"
-		style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-		<div class="nav__container">
-			<div class="nav__div is--left"><a href="/" aria-current="page" class="nav__logo w-nav-brand w--current"
-					aria-label="home"><img
-						src="https://assets-global.website-files.com/60880caa0bdd455a6dcb9dba/608a8899eabe506ecb5aad58_Brella%20Logo%20SVG.svg"
-						loading="lazy" alt="Brella Insurance logo" class="nav__img"></a></div>
-			<div class="nav__div is--centre">
-				<nav role="navigation" class="nav__menu w-nav-menu"><a href="/our-supplemental-health-insurance-plan"
-						class="nav__link w-nav-link">Our Plan</a><a href="/employers"
-						class="nav__link w-nav-link">Employers</a><a href="/brokers"
-						class="nav__link w-nav-link">Brokers</a><a href="/members"
-						class="nav__link w-nav-link">Members</a><a href="/about"
-						class="nav__link w-nav-link">About</a><a href="/blog"
-						class="nav__link is--last w-nav-link">Blog</a>
-					<div class="nav__divider"></div>
-					<div class="nav__cta"><a href="/contact" class="brella__button w-button">Let's talk</a></div>
-					<div data-hover="false" data-delay="0" class="nav__link is--login w-dropdown">
-						<div class="dropdown-toggle w-dropdown-toggle" id="w-dropdown-toggle-0"
-							aria-controls="w-dropdown-list-0" aria-haspopup="menu" aria-expanded="false" role="button"
-							tabindex="0">
-							<div class="nav__dropdown-text">Login</div><img
-								src="https://assets-global.website-files.com/60880caa0bdd455a6dcb9dba/60ba29ee7e0e4c1bfdba3561_arrow-down-pine.svg"
-								loading="lazy" alt="" class="image-27">
-						</div>
-						<nav class="dropdown-list w-dropdown-list" id="w-dropdown-list-0"
-							aria-labelledby="w-dropdown-toggle-0"><a
-								href="https://platform.joinbrella.com/partner/login" target="_blank"
-								class="nav__link-dropdown w-dropdown-link" tabindex="0">Broker</a><a
-								href="https://platform.joinbrella.com/employer/login" target="_blank"
-								class="nav__link-dropdown w-dropdown-link" tabindex="0">Employer</a><a
-								href="https://platform.joinbrella.com/member/login" target="_blank"
-								class="nav__link-dropdown w-dropdown-link" tabindex="0">Member</a></nav>
-					</div>
-					<div class="nav__tr">
-						<div class="wg-element-wrapper sw5">
-							<div data-hover="true" data-delay="300" data-w-id="9a40d1eb-8d8c-e0cb-646b-c867446efd74"
-								class="wg-dropdown-1-2 w-dropdown" style="background-color: rgba(0, 0, 0, 0);">
-								<div lang="en" class="wg-dd-1-togle-2 w-dropdown-toggle" id="w-dropdown-toggle-1"
-									aria-controls="w-dropdown-list-1" aria-haspopup="menu" aria-expanded="false"
-									role="button" tabindex="0">
-									<div>en</div>
-								</div>
-								<nav data-w-id="9a40d1eb-8d8c-e0cb-646b-c867446efd78"
-									class="wg-dd-1-list w-dropdown-list" id="w-dropdown-list-1"
-									aria-labelledby="w-dropdown-toggle-1"
-									style="height: 0%; background-color: rgba(0, 0, 0, 0);"><a href="#" lang="es"
-										class="wg-dropdown-1-link-2 w-dropdown-link" tabindex="0">es</a></nav>
-							</div>
-						</div>
-						<div class="wg-code w-embed w-script">
-							<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-							<script>
-								// init Weglot
-								Weglot.initialize({
-									api_key: 'wg_62d9b9b0750831f48721322c8384946b6'
-								});
-
-								// on Weglot init
-								Weglot.on('initialized', () => {
-									// get the current active language
-									const currentLang = Weglot.getCurrentLang();
-									// call updateDropdownLinks function
-									updateSW5DropdownLinks(currentLang);
-								});
-
-								// for each of the .wg-element-wrapper language links
-								document.querySelectorAll('.wg-element-wrapper.sw5 [lang]').forEach((link) => {
-									// add a click event listener
-									link.addEventListener('click', function (e) {
-										// prevent default
-										e.preventDefault();
-										// switch to the current active language      
-										Weglot.switchTo(this.getAttribute('lang'));
-										// call updateDropdownLinks function
-										updateSW5DropdownLinks(this.getAttribute('lang'));
-									});
-								});
-
-								// updateDropdownLinks function
-								function updateSW5DropdownLinks(currentLang) {
-									// get the wrapper element
-									const $wrapper = document.querySelector('.wg-element-wrapper.sw5');
-									// if the .w-dropdown-toggle is not the current active language
-									if ($wrapper.querySelector('.w-dropdown-toggle').getAttribute('lang') !== currentLang) {
-										// get the current active language link
-										const $activeLangLink = $wrapper.querySelector('[lang=' + currentLang + ']');
-										// swap the dropdown toggle's text with the current active language link text
-										const $toggle = $activeLangLink.closest('.wg-element-wrapper').querySelector('.w-dropdown-toggle');
-										const toggleTxt = $toggle.textContent;
-										const activeLangLinkTxt = $activeLangLink.textContent;
-										$toggle.querySelector('div').textContent = activeLangLinkTxt;
-										$activeLangLink.textContent = toggleTxt;
-										// swap the dropdown toggle's lang attr with the current active language link lang attr  
-										const lang = $activeLangLink.getAttribute('lang');
-										const toggleLang = $toggle.getAttribute('lang');
-										$toggle.setAttribute('lang', lang);
-										$activeLangLink.setAttribute('lang', toggleLang);
-									}
-								}
-							</script>
-						</div>
-						<div data-w-id="50863847-0581-eb90-1ce7-bcfcdbb2334e" class="wg-element-wrapper sw3"
-							style="opacity: 1;"><a lang="en" data-w-id="50863847-0581-eb90-1ce7-bcfcdbb2334f" href="#"
-								class="wg-selector-2 s1 w-inline-block">
-								<div class="wg-selector-2-fill f1"
-									style="transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-								</div>
-								<div class="wg-selector2-text-lang1"
-									style="transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; color: rgb(255, 255, 255);">
-									EN</div>
-							</a><a lang="es" data-w-id="50863847-0581-eb90-1ce7-bcfcdbb23353" href="#"
-								class="wg-selector-2 s2 w-inline-block">
-								<div class="wg-selector-2-fill f2"
-									style="transform: translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-								</div>
-								<div class="wg-selector2-text-lang2"
-									style="color: rgb(33, 78, 65); transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-									ES</div>
-							</a></div>
-						<div class="wg-code w-embed w-script">
-							<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-							<script>
-								// init Weglot
-								Weglot.initialize({
-									api_key: 'wg_62d9b9b0750831f48721322c8384946b6'
-								});
-
-								// on Weglot init
-								Weglot.on('initialized', () => {
-									// get the current active language
-									const currentLang = Weglot.getCurrentLang();
-									// if the current active language link exists
-									if (document.querySelector('.wg-element-wrapper.sw3 [lang=' + currentLang + ']')) {
-										// click the link
-										document.querySelector('.wg-element-wrapper.sw3 [lang=' + currentLang + ']').click();
-									}
-								});
-
-								// for each of the .wg-element-wrapper language links
-								document.querySelectorAll('.wg-element-wrapper.sw3 [lang]').forEach((link) => {
-									// add a click event listener
-									link.addEventListener('click', function (e) {
-										// prevent default
-										e.preventDefault();
-										// switch current active language after a setTimeout
-										setTimeout(() => Weglot.switchTo(this.getAttribute('lang')), 700);
-									});
-								});
-							</script>
-						</div>
-					</div>
+	<header>
+		<div class="container">
+			<div class="head flex">
+				<a href="index.html" class="head_logo">
+					<img src="/img/icons/Frame.svg" alt="">
+				</a>
+				<nav>
+					<ul class="menu flex">
+						<li>
+							<a href="index.html">Our Plan</a>
+						</li>
+						<li>
+							<a href="about.html">Employers</a>
+						</li>
+						<li>
+							<a href="menu.html">Brokers</a>
+						</li>
+						<li>
+							<a href="blog.html">Members</a>
+						</li>
+						<li>
+							<a href="contact.html">About</a>
+						</li>
+						<li>
+							<a href="contact.html">Blog</a>
+						</li>
+					</ul>
 				</nav>
-				<div class="nav__burger w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button"
-					tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
-					<div data-w-id="b4f81b4f-664c-b88f-51c4-341404def692" class="nav__button">
-						<div data-w-id="b4f81b4f-664c-b88f-51c4-341404def693" class="nav__burger-line"><img
-								src="https://assets-global.website-files.com/60880caa0bdd455a6dcb9dba/608aa3a5d82af5625a1a621d_Menu%20icon%20line.svg"
-								loading="lazy" alt="" class="nav__burger-img"></div>
-						<div data-w-id="b4f81b4f-664c-b88f-51c4-341404def695" class="nav__burger-line"><img
-								src="https://assets-global.website-files.com/60880caa0bdd455a6dcb9dba/608aa3a5d82af5625a1a621d_Menu%20icon%20line.svg"
-								loading="lazy" alt="" class="nav__burger-img"></div>
-						<div data-w-id="b4f81b4f-664c-b88f-51c4-341404def697" class="nav__burger-line"><img
-								src="https://assets-global.website-files.com/60880caa0bdd455a6dcb9dba/608aa3a5d82af5625a1a621d_Menu%20icon%20line.svg"
-								loading="lazy" alt="" class="nav__burger-img"></div>
-					</div>
-				</div>
+				<a href="book.html" class="btn_book">
+					<p class="book">Request a demo</p>
+				</a>
+
+				<a href="#" class="to-top">Login</a>
+				<p class="en">EN</p>
 			</div>
 		</div>
-		<div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
-	</div>
+	</header>
 	<section class="start">
 		<div class="container">
 			<div class="starter">
@@ -213,8 +78,7 @@
 					</div>
 					<div class="card_text">
 						<h6 class="card_txt">More coverage</h6>
-						<h6 class="card_txt">Brella covers 13,000+ injuries and illnesses from concussions to cancer.
-						</h6>
+						<h6 class="card_txt">Brella covers 13,000+ injuries and illnesses from concussions to cancer.</h6>
 					</div>
 				</div>
 				<div class="card">
@@ -260,7 +124,7 @@
 					<div class="procent">
 						<h2 class="procent_tit">60%</h2>
 						<h5 class="procent_txt">of Americans would have to borrow</h5>
-						<h5 class="procent_txt">to cover an unexpected $1000</h5>
+						<h5 class="procent_txt">to cover an unexpected $1000 </h5>
 						<h5 class="procent_txt">expense</h5>
 					</div>
 					<div class="reiting">
@@ -339,8 +203,7 @@
 					<div class="bottom_card">
 						<div class="card_text">
 							<h2 class="card_tit">1X</h2>
-							<p class="card_txt">more covered conditions than Accident and Critical Illness
-								plans—combined
+							<p class="card_txt">more covered conditions than Accident and Critical Illness plans—combined
 							</p>
 						</div>
 					</div>
@@ -374,12 +237,10 @@
 					<div class="credit_top-left">
 						<h5 class="credit_titi">a better claims experience</h5>
 						<h2 class="credit_tit">Give your people a plan that pays in hours—not weeks.</h2>
-						<h5 class="credit_txt">Your team can’t wait for peace of mind. Brella pays on diagnosis, so
-							members can file a claim sooner and get paid faster via our Member Portal or mobile app.
-						</h5>
+						<h5 class="credit_txt">Your team can’t wait for peace of mind. Brella pays on diagnosis, so members can file a claim sooner and get paid faster via our Member Portal or mobile app.</h5>
 						<div class="image_little-tit">Play Video</div>
 					</div>
-
+					
 				</div>
 			</div>
 		</div>
@@ -391,8 +252,7 @@
 					<p class="brella_left-txt">for employers</p>
 					<div class="conect_tit">Easy enrollment meets simple administration.deductible.
 					</div>
-					<div class="brella_txt">Brella brings 100% paperless implementation, enrollment, and admin. Plug
-						into our platforms or we’ll plug into yours.</div>
+					<div class="brella_txt">Brella brings 100% paperless implementation, enrollment, and admin. Plug into our platforms or we’ll plug into yours.</div>
 					<div class="image_little-tit">Learn more</div>
 				</div>
 			</div>
@@ -403,39 +263,39 @@
 			<div class="prouder">
 				<div class="container">
 					<h2 class="proud_tit">Proudly backed by</h2>
-					<div class="scrolling-wrapper">
-						<div class="cart">
-							<img src="/img/scrolling/Rectangle (5).jpg" alt="">
-						</div>
-						<div class="cart">
-							<img src="/img/scrolling/Rectangle (6).jpg" alt="">
-						</div>
-						<div class="cart">
-							<img src="/img/scrolling/Rectangle (7).jpg" alt="">
-						</div>
-						<div class="cart">
-							<img src="/img/scrolling/Rectangle (8).jpg" alt="">
-						</div>
-						<div class="cart">
-							<img src="/img/scrolling/Rectangle (9).jpg" alt="">
-						</div>
-						<div class="cart">
-							<img src="/img/scrolling/Rectangle (5).jpg" alt="">
-						</div>
-						<div class="cart">
-							<img src="/img/scrolling/Rectangle (6).jpg" alt="">
-						</div>
-						<div class="cart">
-							<img src="/img/scrolling/Rectangle (7).jpg" alt="">
-						</div>
-						<div class="cart">
-							<img src="/img/scrolling/Rectangle (8).jpg" alt="">
-						</div>
-						<div class="cart">
-							<img src="/img/scrolling/Rectangle (9).jpg" alt="">
-						</div>
-					</div>
-					<hr>
+			<div class="scrolling-wrapper">
+				<div class="cart">
+					<img src="/img/scrolling/Rectangle (5).jpg" alt="">
+				</div>
+				<div class="cart">
+					<img src="/img/scrolling/Rectangle (6).jpg" alt="">
+				</div>
+				<div class="cart">
+					<img src="/img/scrolling/Rectangle (7).jpg" alt="">
+				</div>				
+				<div class="cart">
+					<img src="/img/scrolling/Rectangle (8).jpg" alt="">
+				</div>				
+				<div class="cart">
+					<img src="/img/scrolling/Rectangle (9).jpg" alt="">
+				</div>				
+				<div class="cart">
+					<img src="/img/scrolling/Rectangle (5).jpg" alt="">
+				</div>
+				<div class="cart">
+					<img src="/img/scrolling/Rectangle (6).jpg" alt="">
+				</div>
+				<div class="cart">
+					<img src="/img/scrolling/Rectangle (7).jpg" alt="">
+				</div>				
+				<div class="cart">
+					<img src="/img/scrolling/Rectangle (8).jpg" alt="">
+				</div>				
+				<div class="cart">
+					<img src="/img/scrolling/Rectangle (9).jpg" alt="">
+				</div>				
+			</div>
+			<hr>
 				</div>
 			</div>
 		</div>
@@ -448,8 +308,7 @@
 						<img src="/img/icons/first-slip.jpg" alt="">
 					</div>
 					<span>Podcast</span>
-					<h4 class="slip_txt">Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader, Kim
-						Heald</h4>
+					<h4 class="slip_txt">Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader, Kim Heald</h4>
 				</div>
 				<div class="slip">
 					<div class="slip_img">
@@ -465,8 +324,8 @@
 					<span>Benefits Strategy</span>
 					<h4 class="slip_txt">Executive Benefits Outlook with Dan Aceti</h4>
 				</div>
-
-
+				
+				
 
 			</div>
 		</div>
@@ -488,13 +347,13 @@
 						<p class="push">Get in touch</p>
 					</a>
 				</div>
-
+				
 			</div>
 		</div>
 	</section>
-
-
-
+	
+	
+   
 	<footer>
 		<div class="container">
 			<div class="footer_top">
@@ -505,19 +364,19 @@
 					<div class="footer_second">
 						<h4 class="footer_txt">Join Brella</h4>
 						<div class="littles">
-							<h5 class="footer_little">Our Plan</h5>
-							<h5 class="footer_little">Employers</h5>
-							<h5 class="footer_little"> Brokers</h5>
-							<h5 class="footer_little">Members</h5>
+							<h5 class="footer_little">Our Plan</h5>	
+						<h5 class="footer_little">Employers</h5>	
+						<h5 class="footer_little"> Brokers</h5>	
+						<h5 class="footer_little">Members</h5>	
 						</div>
 					</div>
 					<div class="footer_second">
 						<div class="littles"></div>
 						<h4 class="footer_txt">Company</h4>
-						<h5 class="footer_little">About</h5>
-						<h5 class="footer_little">Blog</h5>
-						<h5 class="footer_little"> Careers</h5>
-						<h5 class="footer_little">Contact</h5>
+						<h5 class="footer_little">About</h5>	
+						<h5 class="footer_little">Blog</h5>	
+						<h5 class="footer_little"> Careers</h5>	
+						<h5 class="footer_little">Contact</h5>	
 					</div>
 				</div>
 				<div class="footer_top-right">
@@ -526,29 +385,21 @@
 					<input type="email" id="email" pattern=".+@example\.com" size="30" required />
 					<div class="arrow-1">
 						<div></div>
-					</div>
+					</div>					
 				</div>
 			</div>
 			<hr>
 			<div class="footer_bottom">
-				<p class="bottom_para">Brella is a limited benefit policy; it is not a substitute for health insurance.
-					The information provided on this website is illustrative only. A complete description of benefits,
-					limitations, and exclusions are provided in your certificate of Insurance and applicable Riders. For
-					a summary of limitations and exclusions, see our FAQ. Payout values listed do not guarantee an
-					amount to be paid for listed conditions. Product not available in all states. All coverage is
-					subject to the terms and conditions of the master group policy.</p>
-				<p class="bottom_para">Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form
-					No. PFSB11-TX</p>
-				<p class="bottom_para">Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703 and by phone
-					at (844) 987-1070</p>
+				<p class="bottom_para">Brella is a limited benefit policy; it is not a substitute for health insurance. The information provided on this website is illustrative only. A complete description of benefits, limitations, and exclusions are provided in your certificate of Insurance and applicable Riders. For a summary of limitations and exclusions, see our FAQ. Payout values listed do not guarantee an amount to be paid for listed conditions. Product not available in all states. All coverage is subject to the terms and conditions of the master group policy.</p>
+				<p class="bottom_para">Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form No. PFSB11-TX</p>
+				<p class="bottom_para">Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703 and by phone at (844) 987-1070</p>
 			</div>
 			<div class="footer_tup flex">
-				<div class="bottom_para">© 2021 Brella Insurance Inc. All Rights Reserved.</div>
+				<div class="bottom_para">© 2021 Brella Insurance Inc. All Rights Reserved.</div>		
 				<div class="bottom-paras flex">
 					<div class="col1">Privacy</div>
-					<div class="col2"></div>
-					<div class="col3">Terms of Service</div>
-				</div>
+				    <div class="col2"></div>
+					<div class="col3">Terms of Service</div>				</div>
 			</div>
 		</div>
 	</footer>
