@@ -347,6 +347,7 @@ input:focus {
 	flex-shrink: 0;
 	margin-right: 10px;
 }
+
 .card3_img {
 	width: 58px;
 	height: 45px;
@@ -399,9 +400,11 @@ nav {
 .brella_right {
 	margin-top: 213px;
 }
-.brella_left{
+
+.brella_left {
 	margin-left: 120px;
 }
+
 .brella_left-txt {
 	color: #43806C;
 	font-family: Raleway;
@@ -426,11 +429,11 @@ nav {
 .conect_tit {
 	color: #214E41;
 	font-family: Roboto;
-	font-size: 32px;
+	font-size: 36px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 42px;
-	/* 131.25% */
+	line-height: 46px;
+	/* 127.778% */
 	margin-bottom: 34px;
 }
 
@@ -492,12 +495,17 @@ nav {
 	width: 87px;
 
 }
-
+.reitngin{
+	margin-top: 16px;
+}
 .conect_little-tit:last-child {
 	text-decoration-line: underline;
 	text-decoration-style: solid;
 }
-
+.procent{
+	margin-top: -80px;
+	margin-right: 20px;
+}
 .procent_tit {
 	color: #214E41;
 	font-family: Roboto;
@@ -536,8 +544,12 @@ nav {
 
 .reitim {
 	margin-right: 40px;
+	margin-top: -55px;
+	/* margin-right: 5px; */
 }
-
+.reitin{
+	margin-top: -200px;
+}
 .reiting {
 	color: #214E41;
 	text-align: center;
@@ -548,7 +560,7 @@ nav {
 	line-height: 22px;
 	/* 169.231% */
 	display: flex;
-
+    
 }
 
 .reitingin {
