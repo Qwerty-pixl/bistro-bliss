@@ -77,7 +77,7 @@ textarea {
 }
 
 .container {
-	max-width: 1325px;
+	max-width: 1420px;
 	width: 100%;
 	min-width: 320px;
 	margin: 0 auto;
@@ -294,7 +294,7 @@ input {
 
 }
 
-.finder {
+button {
 	border: none;
 	width: 123px;
 	height: 60px;
@@ -1100,5 +1100,12 @@ hr {
 	right: 0;
 	cursor: pointer;
 	border-radius: 0px 6px 6px 0px;
-    background: white;
+	background: white;
+}
+
+.search_img {
+	width: 19px;
+	height: 13px;
+	flex-shrink: 0;
+	padding: 16px;
 }
