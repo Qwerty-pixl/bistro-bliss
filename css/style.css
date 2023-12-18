@@ -455,10 +455,10 @@ nav {
 }
 
 .brellas {
+	width: 1400px;
 	height: 652px;
 	display: flex;
 	padding: 0px 60px;
-	justify-content: center;
 	align-items: center;
 	gap: 60px;
 
@@ -468,6 +468,18 @@ nav {
 	width: 510px;
 	height: 358px;
 	flex-shrink: 0;
+}
+
+.spell {
+	color: #757575;
+	text-align: center;
+	font-family: Raleway;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	/* 169.231% */
+	justify-content: end;
 }
 
 .brella_txt {
@@ -911,15 +923,15 @@ span {
 
 .footer {
 	background: #214E41;
-	height: 788px;
-	flex-shrink: 0;
 
 }
 
 .footer_top {
 	display: flex;
 }
-
+.footer_bottom{
+	padding: 1 100px;
+}
 .footer_first {
 	width: 98px;
 	height: 28px;
@@ -1107,5 +1119,19 @@ hr {
 	width: 19px;
 	height: 13px;
 	flex-shrink: 0;
-	padding: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: inline-block;
+}
+
+.email {
+	color: #FFF;
+	font-family: Raleway;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	/* 171.429% */
+	letter-spacing: 0.02px;
 }
