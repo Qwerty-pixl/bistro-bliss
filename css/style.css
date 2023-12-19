@@ -222,7 +222,7 @@ textarea {
 }
 
 .starter {
-	background: url(/img/icons/backround.jpg), lightgray 50% / cover no-repeat;
+	background: url(../img/icons/backround.jpg), lightgray 50% / cover no-repeat;
 	width: 1440px;
 	height: 720px;
 	flex-shrink: 0;
@@ -313,7 +313,105 @@ button:before {
 	color: #F9F0DA;
 }
 
-.card_txt {
+.card_txt {html,
+body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+ul li:last-child {
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+input,
+button,
+textarea {
+    background: none;
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+input::placeholder {
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+input,
+textarea {
+    display: block;
+    resize: none;
+}
+
+body {
+    color: #414536;
+    font-family: "DM Sans", arial;
+    font-size: 18px;
+    line-height: 28px;
+    /* 155.556% */
+}
+
+.container {
+    max-width: 1330px;
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.desc_txt {
+    width: 632px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dn {
+    display: none;
+}
+
 	margin-bottom: 7px;
 	color: #214E41;
 	font-family: "Raleway";
@@ -764,7 +862,7 @@ nav {
 }
 
 .big_image {
-	background-image: url(/img/icons/girl.jpg);
+	background-image: url(./img/icons/girl.jpg);
 	width: 1440px;
 	height: 522px;
 	flex-shrink: 0;
